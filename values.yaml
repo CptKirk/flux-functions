@@ -1,0 +1,6 @@
+# Default values for functions.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+pythontest:
+  image: 192.168.15.53:5083/kf/pythontest:dev-1.0.0

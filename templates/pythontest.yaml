@@ -1,0 +1,9 @@
+apiVersion: openfaas.com/v1alpha2
+kind: Function
+metadata:
+  name: pythontest
+  labels:
+{{ include "functions.labels" . | indent 4 }}
+spec:
+  name: pythontest
+  image: {{ .Values.pythontest.image }}
